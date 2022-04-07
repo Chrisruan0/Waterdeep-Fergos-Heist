@@ -1,0 +1,158 @@
+{
+	"siteVersion": "1.150.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Bonte",
+				"abbreviation": "HWMDM",
+				"full": "Half-White Moustache DM",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1646949911,
+		"dateLastModified": 1646949911
+	},
+	"monster": [
+		{
+			"name": "Tiamat",
+			"source": "Bonte",
+			"summonedByClass": "Artificer|TCE",
+			"size": "M",
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "2 + your Intelligence modifier + five times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 4,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"dex": "+1 plus PB",
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"athletics": "+2 plus PB",
+				"perception": "+0 plus PB × 2",
+				"sleight of hand": "+1",
+				"stealth": "+1"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages you speak",
+				"speaks through magical mimicry"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Tiamat can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Magical Mimicry",
+					"entries": [
+						"Tiamat can magically mimic any sounds it has heard, including a person's voice or music. A creature that hears the sounds can tell they are a recriation with a successful {@dc 14} Wisdom (Insight) check."
+					]
+				},
+				{
+					"name": "Recorded Memory",
+					"entries": [
+						"Tiamat can magically record informations from anything it has seen, such as bounty posters, quest contracts, parchments or images of people or creatures. As an action Tiamat can display these recorded informations as harmless, illusory visual effects within a 5-foot-radius sphere centered on a point in can see within 10 feet of it. The magical effects have neither substance nor sound, and they are obviously illusory."
+					]
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"Tiamat as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					]
+				}
+			],
+			"actionNote": "Requires Your Bonus Action",
+			"action": [
+				{
+					"name": "Elemental Claw",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 10 ft., one target you can see. {@h}{@damage 1d8 + PB} acid, cold, fire or lightning damage (your choice)."
+					]
+				},
+				{
+					"name": "Repair (3/Day)",
+					"entries": [
+						"The magical mechanisms inside the defender restore {@dice 2d8 + PB} hit points to itself or to one construct or object within 5 feet of it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Attack",
+					"entries": [
+						"The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender."
+					]
+				},
+				{
+					"name": "Vigilant Guardian (1/Day)",
+					"entries": [
+						"When a creature within 5 feet of Tiamat is hit by an attack roll, Tiamat swap places with that creature, and it's hit by the attack instead."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/TCE/Steel Defender.png",
+			"fluff": {
+				"name": "Steel Defender",
+				"source": "TCE",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/TCE/Steel Defender.png"
+						}
+					}
+				]
+			},
+			"passive": 0,
+			"traitTags": [
+				"Spider Climb"
+			]
+		}
+	]
+}
